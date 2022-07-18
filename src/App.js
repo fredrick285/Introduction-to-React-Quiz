@@ -1,17 +1,17 @@
 import React from "react";
-import logo from './logo.svg';
 import './App.css';
 
 /**
   Challenge: Display all users to the browser
 **/
-
 const users = [
   { name: "John Doe", id: 1 },
   { name: "Jane Doe", id: 2 },
   { name: "Billy Doe", id: 3 }
 ];
-
+const userlist = users.map((user)=>(
+  <li key={user.id}>{user.name}</li>
+))             
 // comment this out after completion and uncomment code below it to proceed
 function Child() {
   return <div>This is children content</div>;
@@ -59,6 +59,7 @@ function Parent() {
   );
 }
 // Comment above code after completion
+const logo =" https://img.icons8.com/ios-filled/2x/logo.png"
 
 function App() {
   const [] = React.useState(true);
@@ -68,7 +69,7 @@ function App() {
     
     <img src={logo} className="App-logo" alt="logo" />
       <h3>User names</h3>
-      <ul></ul>
+      <ul>{userlist}</ul>
       <button>Hide Element Below</button>
 
       <div>Toggle Challenge</div>
