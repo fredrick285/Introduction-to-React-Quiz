@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-
+  align-items: center;
+  background-color: aqua;
+ margin: auto;
 }
 .container {
   display: flex;
@@ -58,10 +60,11 @@ ul {
 li{
   margin-bottom: 5px;
   list-style: none;
+  font-style: italic;
 }
 
 button{
-  background-color: #f76cb2;
+  background-color: grey;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -74,7 +77,7 @@ button{
 
 button:hover{
   background-color: #fff;
-  color: #f76cb2;
+  color: red;
   border: 1px solid #f76cb2;
 }
 
